@@ -11,32 +11,32 @@ const posters = ref([
 </script>
 
 <template>
-  <main class="main">
-      <h1 class="display-1 p-3">Welcome to The Seattle Cinema!</h1>
-      <p class="lead px-4 pb-3">Seattle's premiere movie theater</p>
-      <h1 class="display-3 text-lowercase bg-warning-subtle px-3 pb-3">Now Playing</h1>
-      <div class="container text-center">
-          <p>Hover your mouse over the movie posters for descriptions of the films</p>
-          <div class="row">
-              <!--Tooltips used to display movie descriptions when hovering over movie posters. Grid used to make the movie posters layout responsive. Posters are also displayed dynamically using variables and a "v-for" loop-->
-              <div v-for="poster in posters" :key="poster" :class="poster.grid">
-                  <figure>
-                      <img :src="poster.img" data-bs-toggle="tooltip" :title="poster.description" class="img-fluid" width="200" :alt="poster.title">
-                  </figure>
-              </div>  
-          </div>
-      </div>
-      <h1 class="display-3 text-lowercase bg-warning-subtle px-3 pb-3">Pricing</h1>
-      <div class="px-3">
-          <p>General Admission: $11</p>
-          <p>Student, Child, Military & Senior: $8</p>
-      </div>
-      <h1 class="display-3 text-lowercase bg-warning-subtle px-3 pb-2">Hours</h1>
-      <div class="px-3">
-          <p>Monday through Sunday</p>
-          <p>3pm - 11pm</p>          
-      </div>
-  </main>
+    <main class="main">
+        <h1 class="display-1 p-3">Welcome to The Seattle Cinema!</h1>
+        <p class="lead px-4 pb-3">Seattle's premiere movie theater</p>
+        <h1 class="display-3 text-lowercase bg-warning-subtle px-3 pb-3">Now Playing</h1>
+        <div class="container text-center">
+            <p>Hover your mouse over the movie posters for descriptions of the films</p>
+            <div class="row">
+                <!--Tooltips used to display movie descriptions when hovering over movie posters. Grid used to make the movie posters layout responsive. Posters are also displayed dynamically using variables and a "v-for" loop-->
+                <div v-for="poster in posters" :key="poster" :class="poster.grid">
+                    <figure>
+                        <img :src="poster.img" data-bs-toggle="tooltip" :title="poster.description" class="img-fluid" width="200" :alt="poster.title">
+                    </figure>
+                </div>  
+            </div>
+        </div>
+        <h1 class="display-3 text-lowercase bg-warning-subtle px-3 pb-3">Pricing</h1>
+        <div class="px-3">
+            <p>General Admission: $11</p>
+            <p>Student, Child, Military & Senior: $8</p>
+        </div>
+        <h1 class="display-3 text-lowercase bg-warning-subtle px-3 pb-2">Hours</h1>
+        <div class="px-3">
+            <p>Monday through Sunday</p>
+            <p>3pm - 11pm</p>          
+        </div>
+    </main>
 </template>
 
 <style scoped>
