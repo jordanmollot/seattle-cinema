@@ -13,6 +13,7 @@
     "bootstrap": "^5.3.3",
     "bootstrap-vue": "^2.23.1",
     "nuxt": "^3.13.0",
+    "usebootstrap": "^3.5.49",
     "vue": "^3.5.6",
     "vue-router": "latest"
   }

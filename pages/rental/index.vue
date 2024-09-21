@@ -11,7 +11,7 @@ const show = ref(true);
   <div class="container text-center">
       <div class="row">
         <div class="col-xl-4 col-md-12 col-xs-12 mt-4">
-          <img src="/src/assets/interior.jpg" class="img-fluid border border-black" width="400" alt="interior photo of the theater showing the movie screen from the back of the auditorium">
+          <img src="/images/interior.jpg" class="img-fluid border border-black" width="400" alt="interior photo of the theater showing the movie screen from the back of the auditorium">
         </div>
         <div class="col-xl-4 col-md-6 col-xs-12 mt-4">
           <p class="lead">The Seattle Cinema is an excellent and affordable venue for screening your own film, private events, birthday parties, discussion groups, business meetings, etc.</p>

@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import { Collapse } from "bootstrap";
 
 const movies = ref([
       { title: 'Barry Lyndon', showtime1: '3:00pm', showtime2: '5:00pm', showtime3: '9:00pm', collapse: 'collapseOne', target: '#collapseOne' },
@@ -7,7 +8,6 @@ const movies = ref([
       { title: 'Full Metal Jacket', showtime1: '3:30pm', showtime2: '5:30pm', showtime3: '9:30pm', collapse: 'collapseThree', target: '#collapseThree' },
     ]
 )
-
 
 </script>
 

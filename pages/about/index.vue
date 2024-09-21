@@ -1,14 +1,14 @@
 <script setup>
 import { ref } from "vue";
 import ImageGallery from "./ImageGallery.vue";
-import { borderToggle } from "/src/composables/useBorderToggle";
+import { borderToggle } from "../src/composables/useBorderToggle";
 
 // object containing all photo/image properties for this page
 const photos = ref([
-      { img: '/src/assets/front-door.jpg', class: 'img-fluid img-select', width: '640', title: 'exterior photo of the theater', alt: 'exterior photo of the front door entrance to Seattle Cinema' },
-      { img: '/src/assets/interior2.jpg', class: 'img-fluid img-select', width: '640', title: 'interior photo of the theater view 1', alt: 'interior photo of the theater showing the seats from the front of the auditorium' },
-      { img: '/src/assets/interior.jpg', class: 'img-fluid img-select', width: '640', title: 'interior photo of the theater view 2', alt: 'interior photo of the theater showing the movie screen from the back of the auditorium' },
-      { img: '/src/assets/concessions.png', class: 'img-fluid img-select', width: '640', title: 'photo of the concession stand', alt: 'interior photo of the concessions stand featuring glowing neon lights' },
+      { img: '/images/front-door.jpg', class: 'img-fluid img-select', width: '640', title: 'exterior photo of the theater', alt: 'exterior photo of the front door entrance to Seattle Cinema' },
+      { img: '/images/interior2.jpg', class: 'img-fluid img-select', width: '640', title: 'interior photo of the theater view 1', alt: 'interior photo of the theater showing the seats from the front of the auditorium' },
+      { img: '/images/interior.jpg', class: 'img-fluid img-select', width: '640', title: 'interior photo of the theater view 2', alt: 'interior photo of the theater showing the movie screen from the back of the auditorium' },
+      { img: '/images/concessions.png', class: 'img-fluid img-select', width: '640', title: 'photo of the concession stand', alt: 'interior photo of the concessions stand featuring glowing neon lights' },
     ]
 )
 

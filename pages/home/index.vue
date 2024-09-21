@@ -2,9 +2,9 @@
 import { ref } from "vue";
 
 const posters = ref([
-      { img: '/src/assets/barry-lyndon-poster.jpeg', title: 'Barry Lyndon', grid: 'col-xl-4 col-md-6 col-xs-12', description: 'Barry Lyndon (1975) - Acclaimed adaptation of the novel by William Makepeace Thackeray, in which a likeable young Irishman changes into a conniving, manipulative rogue.' },
-      { img: '/src/assets/eyes-wide-shut-poster.jpeg', title: 'Eyes Wide Shut', grid: 'col-xl-4 col-md-6 col-xs-12', description: 'Eyes Wide Shut (1999) - After Dr. Bill Hartfords (Tom Cruise) wife, Alice (Nicole Kidman), admits to having sexual fantasies about a man she met, Bill becomes obsessed with having a sexual encounter.' },
-      { img: '/src/assets/full-metal-jacket-poster.jpeg', title: 'Full Metal Jacket', grid: 'col-xl-4 col-md-12 col-xs-12', description: 'Full Metal Jacket (1987) - Stanley Kubricks take on the Vietnam War follows smart-aleck Private Davis (Matthew Modine) through the basic training and then the Vietnam War.' },
+      { img: '/images/barry-lyndon-poster.jpeg', title: 'Barry Lyndon', grid: 'col-xl-4 col-md-6 col-xs-12', description: 'Barry Lyndon (1975) - Acclaimed adaptation of the novel by William Makepeace Thackeray, in which a likeable young Irishman changes into a conniving, manipulative rogue.' },
+      { img: '/images/eyes-wide-shut-poster.jpeg', title: 'Eyes Wide Shut', grid: 'col-xl-4 col-md-6 col-xs-12', description: 'Eyes Wide Shut (1999) - After Dr. Bill Hartfords (Tom Cruise) wife, Alice (Nicole Kidman), admits to having sexual fantasies about a man she met, Bill becomes obsessed with having a sexual encounter.' },
+      { img: '/images/full-metal-jacket-poster.jpeg', title: 'Full Metal Jacket', grid: 'col-xl-4 col-md-12 col-xs-12', description: 'Full Metal Jacket (1987) - Stanley Kubricks take on the Vietnam War follows smart-aleck Private Davis (Matthew Modine) through the basic training and then the Vietnam War.' },
     ]
 )
 
