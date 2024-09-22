@@ -33,6 +33,9 @@
                         <li class="nav-item">
                             <NuxtLink to="/rental" class="nav-link">Rental</NuxtLink>
                         </li>
+                        <li class="nav-item">
+                            <NuxtLink to="/trivia" class="nav-link">Trivia Night</NuxtLink>
+                        </li>
                     </ul>
                 </div>
             </nav>
