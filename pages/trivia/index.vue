@@ -7,7 +7,7 @@ const triviaQuestions = ref([]);
 onMounted(async () => {
   try {
     const response = await fetch(
-      "https://opentdb.com/api.php?amount=3&category=11"
+      "https://opentdb.com/api.php?amount=4&category=11&type=multiple"
     );
     const data = await response.json();
     triviaQuestions.value = data.results;
@@ -16,6 +16,7 @@ onMounted(async () => {
     console.error(error);
   }
 });
+
 </script>
 
 <template>
@@ -31,12 +32,16 @@ onMounted(async () => {
   <section>
     <div class="container text-center">
       <div class="row">
-        <div class="col-xl-12 col-md-12 col-xs-12">
-          <div v-for="question in triviaQuestions" :key="question">
+        <div class="col-xl-6 col-md-6 col-xs-12" v-for="question in triviaQuestions" :key="question">
+          <div class="p-5 border">
             <Card
+              :category="question.category"
+              :difficulty="question.difficulty"
               :question="question.question"
               :correct="question.correct_answer"
             />
+          </div>
+          <div class="m-4">
           </div>
         </div>
       </div>  
@@ -45,6 +50,5 @@ onMounted(async () => {
 </template>
 
 <style scoped>
-
 
 </style>
