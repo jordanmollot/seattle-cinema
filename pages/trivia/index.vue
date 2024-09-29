@@ -2,6 +2,8 @@
 import { ref, onMounted } from "vue";
 import Card from "@/components/Card.vue";
 
+
+//retrieving Open Triva Database API data
 const triviaQuestions = ref([]);
 
 onMounted(async () => {
@@ -32,6 +34,7 @@ onMounted(async () => {
   <section>
     <div class="container text-center">
       <div class="row">
+        <!--Using v-for to loop through API data and sending data through props to trivia card component -->
         <div class="col-xl-6 col-md-6 col-xs-12" v-for="question in triviaQuestions" :key="idx">
           <div class="p-5 border">
             <Card

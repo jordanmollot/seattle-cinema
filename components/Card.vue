@@ -14,6 +14,7 @@ const reveal = ref(false);
 </script>
 
 <template>
+  <!--Using props to take API data and create trivia questions that generate dynamically-->
   <div>
     <h5 class="p-3 bg-warning-subtle">CATEGORY: {{ props.category }}</h5>
     <h5 class="p-3 bg-warning-subtle">DIFFICULTY: {{ props.difficulty }}</h5>

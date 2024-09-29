@@ -4,7 +4,9 @@
 
 </script>
 
+
 <template>
+    <!--Site navigation using Nuxt (Nuxtlink)-->
     <div>
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-warning p-4">
@@ -16,25 +18,26 @@
                     aria-controls="navbarNav"
                     aria-expanded="false"
                     aria-label="Toggle navigation"
+                    type="button"
                 >
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <NuxtLink to="/home" class="nav-link active" aria-current="page">Home</NuxtLink>
+                            <NuxtLink to="/home" class="nav-link" aria-current="page">Home</NuxtLink>
                         </li>
                         <li class="nav-item">
-                            <NuxtLink to="/about" class="nav-link">About</NuxtLink>
+                            <NuxtLink to="/about" class="nav-link" aria-current="page">About</NuxtLink>
                         </li>
                         <li class="nav-item">
-                            <NuxtLink to="/showtimes" class="nav-link">Showtimes</NuxtLink>
+                            <NuxtLink to="/showtimes" class="nav-link" aria-current="page">Showtimes</NuxtLink>
                         </li>                        
                         <li class="nav-item">
-                            <NuxtLink to="/rental" class="nav-link">Rental</NuxtLink>
+                            <NuxtLink to="/rental" class="nav-link" aria-current="page">Rental</NuxtLink>
                         </li>
                         <li class="nav-item">
-                            <NuxtLink to="/trivia" class="nav-link">Trivia Night</NuxtLink>
+                            <NuxtLink to="/trivia" class="nav-link" aria-current="page">Trivia Night</NuxtLink>
                         </li>
                     </ul>
                 </div>
