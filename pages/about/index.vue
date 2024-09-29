@@ -12,8 +12,6 @@ const photos = ref([
     ]
 )
 
-let isActive = ref(true);
-
 </script>
 
 <template>
@@ -39,7 +37,7 @@ let isActive = ref(true);
               :width="photo.width" 
               :title="photo.title"
               :alt="photo.title"
-              @click="borderToggle($event)"
+              @click="borderToggle"
             />
           </figure>
         </div>

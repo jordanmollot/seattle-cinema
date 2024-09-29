@@ -3,9 +3,12 @@
 import { ref } from 'vue'
 
 //function for border toggle
+
+let isActive = ref(false);
+
 export function borderToggle (e) {
-  this.isActive = !this.isActive;
-  if (this.isActive === false) {
+  isActive = !isActive;
+  if (isActive === false) {
     e.target.style.border = "solid black";
   }
   else {
