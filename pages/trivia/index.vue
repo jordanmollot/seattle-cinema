@@ -32,7 +32,7 @@ onMounted(async () => {
   <section>
     <div class="container text-center">
       <div class="row">
-        <div class="col-xl-6 col-md-6 col-xs-12" v-for="question in triviaQuestions" :key="question">
+        <div class="col-xl-6 col-md-6 col-xs-12" v-for="question in triviaQuestions" :key="idx">
           <div class="p-5 border">
             <Card
               :category="question.category"
