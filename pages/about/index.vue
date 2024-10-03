@@ -3,6 +3,14 @@ import { ref } from "vue";
 import ImageGallery from "./ImageGallery.vue";
 import { borderToggle } from "../src/composables/useBorderToggle";
 
+// using the Head Method to change the title and meta data of this page
+useHead({
+    title: 'The Seattle Cinema | About the Theater',
+    meta: [
+        { name: 'description', content: 'The About page of the site, featuring general information about the theater including the history and photos of the theater' }
+    ]
+})
+
 // object containing all photo/image properties for this page
 const photos = ref([
       { img: '/images/front-door.jpg', class: 'img-fluid img-select', width: '640', title: 'exterior photo of the theater', alt: 'exterior photo of the front door entrance to Seattle Cinema' },

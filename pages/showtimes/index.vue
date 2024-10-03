@@ -2,6 +2,14 @@
 import { ref } from "vue";
 import { Collapse } from "bootstrap";
 
+// using the Head Method to change the title and meta data of this page
+useHead({
+    title: 'The Seattle Cinema | Showtimes',
+    meta: [
+        { name: 'description', content: 'The Showtimes page of the site, featuring what movies are currently showing at the theater what times of the day they are playing' }
+    ]
+})
+
 const movies = ref([
       { title: 'Barry Lyndon', showtime1: '3:00pm', showtime2: '5:00pm', showtime3: '9:00pm', collapse: 'collapseOne', target: '#collapseOne' },
       { title: 'Eyes Wide Shut', showtime1: '3:15pm', showtime2: '5:15pm', showtime3: '9:15pm', collapse: 'collapseTwo', target: '#collapseTwo' },

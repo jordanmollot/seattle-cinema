@@ -1,6 +1,14 @@
 <script setup>
 import { ref } from "vue";
 
+// using the Head Method to change the title and meta data of this page
+useHead({
+    title: 'The Seattle Cinema | Theater Rental',
+    meta: [
+        { name: 'description', content: 'The Theater Rental page of the site, featuring information about renting the theater including cost and four-walling details' }
+    ]
+})
+
 const show = ref(true);
 </script>
 

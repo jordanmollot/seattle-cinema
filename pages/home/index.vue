@@ -1,6 +1,14 @@
 <script setup>
 import { ref } from "vue";
 
+// using the Head Method to change the title and meta data of this page
+useHead({
+    title: 'The Seattle Cinema | Home',
+    meta: [
+        { name: 'description', content: 'The Home or main page of the site, featuring current movies showing at the theater, pricing and hours of operations' }
+    ]
+})
+
 const posters = ref([
       { img: '/images/barry-lyndon-poster.jpeg', title: 'Barry Lyndon', grid: 'col-xl-4 col-md-6 col-xs-12', description: 'Barry Lyndon (1975) - Acclaimed adaptation of the novel by William Makepeace Thackeray, in which a likeable young Irishman changes into a conniving, manipulative rogue.' },
       { img: '/images/eyes-wide-shut-poster.jpeg', title: 'Eyes Wide Shut', grid: 'col-xl-4 col-md-6 col-xs-12', description: 'Eyes Wide Shut (1999) - After Dr. Bill Hartfords (Tom Cruise) wife, Alice (Nicole Kidman), admits to having sexual fantasies about a man she met, Bill becomes obsessed with having a sexual encounter.' },

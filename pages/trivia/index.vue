@@ -2,6 +2,13 @@
 import { ref, onMounted } from "vue";
 import Card from "@/components/Card.vue";
 
+// using the Head Method to change the title and meta data of this page
+useHead({
+    title: 'The Seattle Cinema | Trivia Night',
+    meta: [
+        { name: 'description', content: 'The Trivia Night page of the site, featuring information about the weekly movie-themed trivia night including sample trivia questions' }
+    ]
+})
 
 //retrieving Open Triva Database API data
 const triviaQuestions = ref([]);
